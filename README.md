@@ -80,7 +80,7 @@ Expected response:
 }
 ```
 
-Expected responds if Last.fm API returns no result for artists name:
+Expected response if Last.fm API returns no result for artists name:
 
 ```text
 http://localhost:3000/artists?artist=dsfkdsjf&file=my_heros.csv

@@ -1,18 +1,18 @@
 const artistsServices = require('../services/artists');
 const logger = require('../utils/logger');
 
-function get(request, responds){
+function get(request, response){
     if(request.query.artist && request.query.file){
         artistsServices.searchArtistByName(request.query)
         .then((result) => {
-            responds.status(200).send({success: true, data: result});
+            response.status(200).send({success: true, data: result});
         })
         .catch((err) => {
             logger.log('error', err);
-            responds.status(500)
+            response.status(500)
         })
     } else {
-        responds.status(400).send({success: false, error: 'Missing query parameters: "name" and "file" are required.'});
+        response.status(400).send({success: false, error: 'Missing query parameters: "name" and "file" are required.'});
     }
 }
 
