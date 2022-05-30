@@ -1,31 +1,42 @@
 # Example API
 A short example of a REST API built on express.js with a http server.
 
-# Last.fm API
-
-This REST API uses the [Last.fm Music Discovery API](https://www.last.fm/api). 
-
-1. Get an APi account
-2. Set API Key in your .env
-3. Set the [API root URL](https://www.last.fm/api/intro) in your .env 
-
 # Download & Setup
 
 ## Clone
-`git clone https://github.com/larapollehn/example-rest-api.git`
+```bash 
+$ git clone https://github.com/larapollehn/example-rest-api.git
+```
 
 ## Install Dependencies
-`npm install`
+```bash 
+$ npm install
+```
 
-## Start Http Server
-Start with npm-script **start** 
+## Setup Last.fm API
 
-`npm run start`
+This REST API uses the [Last.fm Music Discovery API](https://www.last.fm/api). 
+
+1. Get an API account
+2. Apply for [API Authentication](https://www.last.fm/api/authentication)
+3. Set API Key in your .env
+4. Set the [API root URL](https://www.last.fm/api/intro) in your .env 
+
+## Run tests
+```bash 
+$ npm run test
+```
+
+## Start HTTP Server
+
+```bash 
+$ npm run start
+```
 
 Alternatively start manually via terminal.
 ```bash
 $ cd example-api
-$ node src/app.js
+$ node src/server.js
 ```
 
 Check Terminal for success log. It should look similar to this:
@@ -33,14 +44,11 @@ Check Terminal for success log. It should look similar to this:
 $ npm run start
 
 > example-api@1.0.0 start
-> node src/app.js
+> node src/server.js
 
 Server is running on port  3000
 
 ```
-
-## Run tests
-`npm run test`
 
 # Use API
 
