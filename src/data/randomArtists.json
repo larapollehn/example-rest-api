@@ -1,0 +1,9 @@
+{
+    "artists": [
+        {"name": "Foo Fighters"},
+        {"name": "The Prodigy"},
+        {"name": "Doja Cat"},
+        {"name": "Stevie Nix"},
+        {"name": "U2"}
+    ]
+}

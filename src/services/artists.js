@@ -1,4 +1,4 @@
-const sampleData = require('../data/sampleData');
+const randomArtists = require('../data/randomArtists.json');
 const csvManager = require('../utils/csvManager');
 const axios = require('axios').default;
 const logger = require('../utils/logger');
@@ -45,7 +45,7 @@ function searchArtistByName(query){
 }
 
 function getRandomArtists(){
-    return sampleData.randomArtists;
+    return randomArtists.artists;
 }
 
 module.exports = {searchArtistByName};
