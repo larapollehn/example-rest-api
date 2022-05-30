@@ -5,12 +5,12 @@ A short example of a REST API built on express.js with a http server.
 
 ## Clone
 ```bash 
-$ git clone https://github.com/larapollehn/example-rest-api.git
+git clone https://github.com/larapollehn/example-rest-api.git
 ```
 
 ## Install Dependencies
 ```bash 
-$ npm install
+npm install
 ```
 
 ## Setup Last.fm API
@@ -24,24 +24,24 @@ This REST API uses the [Last.fm Music Discovery API](https://www.last.fm/api).
 
 ## Run tests
 ```bash 
-$ npm run test
+npm run test
 ```
 
 ## Start HTTP Server
 
 ```bash 
-$ npm run start
+npm run start
 ```
 
 Alternatively start manually via terminal.
 ```bash
-$ cd example-api
-$ node src/server.js
+cd example-api
+node src/server.js
 ```
 
 Check Terminal for success log. It should look similar to this:
-```bash
-$ npm run start
+```text
+npm run start
 
 > example-api@1.0.0 start
 > node src/server.js
