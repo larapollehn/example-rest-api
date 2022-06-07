@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles --coverage --collectCoverageFrom='./src/**/**.js'"
   },
   "dependencies": {
     "axios": "^0.27.2",
